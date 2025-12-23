@@ -4,6 +4,11 @@ import { projects } from "@/content/projects";
 export default function Home() {
   return (
     <main className="min-h-screen bg-white px-6 py-16">
+      <img
+        src="/images/headshot.jpg"
+        alt="Justin Kim headshot"
+        className="mb-6 h-28 w-28 rounded-full object-cover"
+      />
       <h1 className="text-4xl font-bold text-black">Justin Kim</h1>
 
       <p className="mt-2 text-lg font-medium text-gray-800">
