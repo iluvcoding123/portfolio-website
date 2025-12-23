@@ -75,6 +75,16 @@ export default async function ProjectPage({ params }: Props) {
 
       {/* stock-sentiment-analyzer */}
       {project.slug === "stock-sentiment-analyzer" && (
+        <div className="mt-8 max-w-2xl">
+          <h2 className="text-lg font-semibold text-black">Approach</h2>
+          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-gray-700">
+            <li>Collected and normalized financial news headlines by ticker.</li>
+            <li>Applied sentiment classification to label each headline.</li>
+            <li>Aggregated sentiment over time to identify market trends.</li>
+          </ul>
+        </div>
+      )}
+      {project.slug === "stock-sentiment-analyzer" && (
         <section className="mt-10">
           <h2 className="mb-4 text-lg font-semibold text-black">
             Example Outputs
@@ -116,6 +126,16 @@ export default async function ProjectPage({ params }: Props) {
       )}
 
       {/* smartrefi */}
+      {project.slug === "smartrefi" && (
+        <div className="mt-8 max-w-2xl">
+          <h2 className="text-lg font-semibold text-black">Approach</h2>
+          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-gray-700">
+            <li>Designed a normalized relational schema to model borrowers, lenders, and offers.</li>
+            <li>Implemented pricing logic to evaluate refinance eligibility.</li>
+            <li>Analyzed borrower outcomes to quantify interest rate improvements.</li>
+          </ul>
+        </div>
+      )}
       {project.slug === "smartrefi" && (
         <section className="mt-10">
           <h2 className="mb-4 text-lg font-semibold text-black">
@@ -178,6 +198,16 @@ export default async function ProjectPage({ params }: Props) {
       )}
 
       {/* housing-price-predictor */}
+      {project.slug === "housing-price-prediction" && (
+        <div className="mt-8 max-w-2xl">
+          <h2 className="text-lg font-semibold text-black">Approach</h2>
+          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-gray-700">
+            <li>Performed data cleaning and feature engineering on housing attributes.</li>
+            <li>Trained and evaluated an XGBoost regression model.</li>
+            <li>Deployed the trained model behind a FastAPI inference endpoint.</li>
+          </ul>
+        </div>
+      )}
       {project.slug === "housing-price-prediction" && (
         <section className="mt-10">
           <h2 className="mb-4 text-lg font-semibold text-black">
