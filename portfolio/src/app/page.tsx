@@ -20,6 +20,30 @@ export default function Home() {
         across finance, analytics, and machine learning.
       </p>
 
+      <div className="mt-6 flex gap-6 text-sm font-medium">
+        <a
+          href="https://www.linkedin.com/in/jkim555"
+          target="_blank"
+          className="text-blue-600 hover:underline"
+        >
+          LinkedIn
+        </a>
+        <a
+          href="https://github.com/iluvcoding123"
+          target="_blank"
+          className="text-blue-600 hover:underline"
+        >
+          GitHub
+        </a>
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          className="text-blue-600 hover:underline"
+        >
+          Resume
+        </a>
+      </div>
+
       {/* Projects */}
       <section className="mt-12 grid gap-6 md:grid-cols-2">
         {projects.map((project) => (
