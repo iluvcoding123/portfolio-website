@@ -87,7 +87,7 @@ export default async function ProjectPage({ params }: Props) {
       {project.slug === "stock-sentiment-analyzer" && (
         <section className="mt-10">
           <h2 className="mb-4 text-lg font-semibold text-black">
-            Example Outputs
+            Results
           </h2>
 
           <div className="grid gap-8 lg:grid-cols-2">
@@ -139,7 +139,7 @@ export default async function ProjectPage({ params }: Props) {
       {project.slug === "smartrefi" && (
         <section className="mt-10">
           <h2 className="mb-4 text-lg font-semibold text-black">
-            Example Outputs
+            Results
           </h2>
 
           <div className="grid gap-8 lg:grid-cols-2">
@@ -211,7 +211,7 @@ export default async function ProjectPage({ params }: Props) {
       {project.slug === "housing-price-prediction" && (
         <section className="mt-10">
           <h2 className="mb-4 text-lg font-semibold text-black">
-            Example Outputs
+            Results
           </h2>
 
           <div className="grid gap-8 lg:grid-cols-2">
