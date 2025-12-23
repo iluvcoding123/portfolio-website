@@ -37,6 +37,42 @@ export default async function ProjectPage({ params }: Props) {
         {project.tech}
       </p>
 
+      {project.slug === "stock-sentiment-analyzer" && (
+        <div className="mt-4">
+          <a
+            href="https://github.com/iluvcoding123/stock-sentiment-analyzer.git"
+            target="_blank"
+            className="text-sm font-medium text-blue-600 hover:underline"
+          >
+            View GitHub Repository →
+          </a>
+        </div>
+      )}
+
+      {project.slug === "smartrefi" && (
+        <div className="mt-4">
+          <a
+            href="https://github.com/iluvcoding123/smartrefi-data-management-system.git"
+            target="_blank"
+            className="text-sm font-medium text-blue-600 hover:underline"
+          >
+            View GitHub Repository →
+          </a>
+        </div>
+      )}
+
+      {project.slug === "housing-price-prediction" && (
+        <div className="mt-4">
+          <a
+            href="https://github.com/iluvcoding123/housing-price-predictor.git"
+            target="_blank"
+            className="text-sm font-medium text-blue-600 hover:underline"
+          >
+            View GitHub Repository →
+          </a>
+        </div>
+      )}
+
       {/* stock-sentiment-analyzer */}
       {project.slug === "stock-sentiment-analyzer" && (
         <section className="mt-10">
