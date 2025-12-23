@@ -68,6 +68,38 @@ export default async function ProjectPage({ params }: Props) {
           </div>
         </section>
       )}
+
+      {project.slug === "smartrefi" && (
+        <section className="mt-10">
+          <h2 className="mb-4 text-lg font-semibold text-black">
+            Example Outputs
+          </h2>
+
+          <div className="grid gap-8 lg:grid-cols-2">
+            <a href="/images/smartrefi-eer.png" target="_blank">
+              <img
+                src="/images/smartrefi-eer.png"
+                alt="SmartRefi entity-relationship diagram"
+                className="w-full rounded-lg border"
+              />
+            </a>
+            <a href="/images/smartrefi-scatter.png" target="_blank">
+              <img
+                src="/images/smartrefi-scatter.png"
+                alt="GPA versus offer pricing scatter plot"
+                className="w-full rounded-lg border"
+              />
+            </a>
+            <a href="/images/smartrefi-bar.png" target="_blank">
+              <img
+                src="/images/smartrefi-bar.png"
+                alt="Interest rate improvement from refinancing"
+                className="w-full rounded-lg border"
+              />
+            </a>
+          </div>
+        </section>
+      )}
     </main>
   );
 }
