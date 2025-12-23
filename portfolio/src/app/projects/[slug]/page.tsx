@@ -43,22 +43,28 @@ export default async function ProjectPage({ params }: Props) {
             Example Outputs
           </h2>
 
-          <div className="grid gap-6 md:grid-cols-3">
-            <img
-              src="/images/stock-sentiment-headlines.png"
-              alt="Stock sentiment headlines table"
-              className="rounded-lg border"
-            />
-            <img
-              src="/images/stock-sentiment-distribution.png"
-              alt="Sentiment label distribution chart"
-              className="rounded-lg border"
-            />
-            <img
-              src="/images/stock-sentiment-trends.png"
-              alt="Sentiment trends over time"
-              className="rounded-lg border"
-            />
+          <div className="grid gap-8 lg:grid-cols-2">
+            <a href="/images/stock-sentiment-headlines.png" target="_blank">
+              <img
+                src="/images/stock-sentiment-headlines.png"
+                alt="Stock sentiment headlines table"
+                className="w-full rounded-lg border"
+              />
+            </a>
+            <a href="/images/stock-sentiment-distribution.png" target="_blank">
+              <img
+                src="/images/stock-sentiment-distribution.png"
+                alt="Sentiment label distribution chart"
+                className="w-full rounded-lg border"
+              />
+            </a>
+            <a href="/images/stock-sentiment-trends.png" target="_blank">
+              <img
+                src="/images/stock-sentiment-trends.png"
+                alt="Sentiment trends over time"
+                className="w-full rounded-lg border"
+              />
+            </a>
           </div>
         </section>
       )}
