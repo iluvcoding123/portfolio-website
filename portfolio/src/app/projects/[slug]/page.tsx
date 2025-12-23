@@ -87,6 +87,9 @@ export default async function ProjectPage({ params }: Props) {
                 alt="Stock sentiment headlines table"
                 className="w-full rounded-lg border"
               />
+              <p className="mt-2 text-xs text-gray-500">
+                Sample financial news headlines mapped to sentiment labels.
+              </p>
             </a>
             <a href="/images/stock-sentiment-distribution.png" target="_blank">
               <img
@@ -94,6 +97,9 @@ export default async function ProjectPage({ params }: Props) {
                 alt="Sentiment label distribution chart"
                 className="w-full rounded-lg border"
               />
+              <p className="mt-2 text-xs text-gray-500">
+                Distribution of sentiment classifications across collected headlines.
+              </p>
             </a>
             <a href="/images/stock-sentiment-trends.png" target="_blank">
               <img
@@ -101,6 +107,9 @@ export default async function ProjectPage({ params }: Props) {
                 alt="Sentiment trends over time"
                 className="w-full rounded-lg border"
               />
+              <p className="mt-2 text-xs text-gray-500">
+                Aggregated sentiment trends over time by ticker.
+              </p>
             </a>
           </div>
         </section>
@@ -120,6 +129,9 @@ export default async function ProjectPage({ params }: Props) {
                 alt="SmartRefi entity-relationship diagram"
                 className="w-full rounded-lg border"
               />
+              <p className="mt-2 text-xs text-gray-500">
+                Entity-relationship model defining borrowers, lenders, offers, and refinance contracts.
+              </p>
             </a>
             <a href="/images/smartrefi-uml.png" target="_blank">
               <img
@@ -127,6 +139,9 @@ export default async function ProjectPage({ params }: Props) {
                 alt="SmartRefi UML diagram"
                 className="w-full rounded-lg border"
               />
+              <p className="mt-2 text-xs text-gray-500">
+                System-level UML diagram showing application and data flow.
+              </p>
             </a>
             <a href="/images/smartrefi-scatter.png" target="_blank">
               <img
@@ -134,6 +149,9 @@ export default async function ProjectPage({ params }: Props) {
                 alt="GPA versus offer pricing scatter plot"
                 className="w-full rounded-lg border"
               />
+              <p className="mt-2 text-xs text-gray-500">
+                Relationship between borrower GPA and offered interest rates.
+              </p>
             </a>
             <a href="/images/smartrefi-bar.png" target="_blank">
               <img
@@ -141,6 +159,9 @@ export default async function ProjectPage({ params }: Props) {
                 alt="Interest rate improvement from refinancing"
                 className="w-full rounded-lg border"
               />
+              <p className="mt-2 text-xs text-gray-500">
+                Interest rate improvement achieved through refinancing.
+              </p>
             </a>
             <a href="/images/smartrefi-lender.png" target="_blank">
               <img
@@ -148,6 +169,9 @@ export default async function ProjectPage({ params }: Props) {
                 alt="SmartRefi lender disbursement analysis"
                 className="w-full rounded-lg border"
               />
+              <p className="mt-2 text-xs text-gray-500">
+                Lender participation and disbursement distribution.
+              </p>
             </a>
           </div>
         </section>
@@ -167,6 +191,9 @@ export default async function ProjectPage({ params }: Props) {
                 alt="Housing price predictor API request example"
                 className="w-full rounded-lg border"
               />
+              <p className="mt-2 text-xs text-gray-500">
+                Example POST request to the housing price prediction API.
+              </p>
             </a>
 
             <a href="/images/housing-response.png" target="_blank">
@@ -175,6 +202,9 @@ export default async function ProjectPage({ params }: Props) {
                 alt="Housing price predictor API response example"
                 className="w-full rounded-lg border"
               />
+              <p className="mt-2 text-xs text-gray-500">
+                API response returning predicted home sale price.
+              </p>
             </a>
 
             <a href="/images/housing-predicted-vs-actual.png" target="_blank">
@@ -183,6 +213,9 @@ export default async function ProjectPage({ params }: Props) {
                 alt="Actual versus predicted sale price plot"
                 className="w-full rounded-lg border"
               />
+              <p className="mt-2 text-xs text-gray-500">
+                Predicted versus actual sale prices on the test dataset.
+              </p>
             </a>
 
             <a href="/images/housing-feature-importance.png" target="_blank">
@@ -191,6 +224,9 @@ export default async function ProjectPage({ params }: Props) {
                 alt="XGBoost feature importance chart"
                 className="w-full rounded-lg border"
               />
+              <p className="mt-2 text-xs text-gray-500">
+                Feature importance scores from the trained XGBoost model.
+              </p>
             </a>
           </div>
         </section>
