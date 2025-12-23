@@ -37,9 +37,31 @@ export default async function ProjectPage({ params }: Props) {
         {project.tech}
       </p>
 
-      <div className="mt-10 rounded-lg border border-dashed border-gray-300 p-8 text-gray-500">
-        Project visuals coming soon.
-      </div>
+      {project.slug === "stock-sentiment-analyzer" && (
+        <section className="mt-10">
+          <h2 className="mb-4 text-lg font-semibold text-black">
+            Example Outputs
+          </h2>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            <img
+              src="/images/stock-sentiment-headlines.png"
+              alt="Stock sentiment headlines table"
+              className="rounded-lg border"
+            />
+            <img
+              src="/images/stock-sentiment-distribution.png"
+              alt="Sentiment label distribution chart"
+              className="rounded-lg border"
+            />
+            <img
+              src="/images/stock-sentiment-trends.png"
+              alt="Sentiment trends over time"
+              className="rounded-lg border"
+            />
+          </div>
+        </section>
+      )}
     </main>
   );
 }
