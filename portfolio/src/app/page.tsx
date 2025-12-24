@@ -4,7 +4,9 @@ import { Linkedin, Github, FileText } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white px-6 py-16">
+    <main className="min-h-screen bg-white py-16">
+      <div className="mx-auto max-w-5xl px-6">
+      <div className="pl-2 sm:pl-4">
       <img
         src="/images/headshot.jpg"
         alt="Justin Kim headshot"
@@ -48,13 +50,14 @@ export default function Home() {
         </a>
         
       </div>
-
+      </div>
       {/* Projects */}
       <section className="mt-12 grid gap-6 md:grid-cols-2">
         {projects.map((project) => (
           <ProjectCard key={project.slug} {...project} />
     ))}
       </section>
+      </div>
     </main>
   );
 }
