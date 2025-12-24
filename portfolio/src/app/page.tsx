@@ -1,5 +1,6 @@
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/content/projects";
+import { Linkedin, Github, FileText } from "lucide-react";
 
 export default function Home() {
   return (
@@ -20,27 +21,32 @@ export default function Home() {
         across finance, analytics, and machine learning.
       </p>
 
-      <div className="mt-6 flex gap-6 text-sm font-medium">
+      <div className="mt-6 flex items-center gap-5">
         <a
           href="https://www.linkedin.com/in/jkim555"
           target="_blank"
-          className="text-blue-600 hover:underline"
+          aria-label="LinkedIn"
+          className="text-gray-700 hover:text-gray-900"
         >
-          LinkedIn
+          <Linkedin className="h-6 w-6" />
         </a>
+
         <a
           href="https://github.com/iluvcoding123"
           target="_blank"
-          className="text-blue-600 hover:underline"
+          aria-label="GitHub"
+          className="text-gray-700 hover:text-gray-900"
         >
-          GitHub
+          <Github className="h-6 w-6" />
         </a>
+
         <a
           href="/resume.pdf"
           target="_blank"
-          className="text-blue-600 hover:underline"
+          aria-label="Resume"
+          className="text-gray-700 hover:text-gray-900"
         >
-          Resume
+          <FileText className="h-6 w-6" />
         </a>
       </div>
 

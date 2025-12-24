@@ -25,6 +25,6 @@ export const projects = [
     title: "British Airways Customer Review Dashboard",
     description:
       "Created an interactive Tableau dashboard analyzing British Airways customer reviews across aircraft type, cabin class, country, and service categories to surface satisfaction drivers and pain points.",
-    tech: "Tableau · Data Cleaning · Customer Analytics",
+    tech: "Tableau · Data Cleaning · Customer Analytics · Visualization · Interactivity",
   },
 ];
