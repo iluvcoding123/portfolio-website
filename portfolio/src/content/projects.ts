@@ -20,4 +20,11 @@ export const projects = [
       "Designed a normalized MySQL database to model a GPA-based student loan refinancing system and built analytical queries to evaluate lender pricing and refinance behavior.",
     tech: "MySQL · SQL · Python · MongoDB · Data Modeling",
   },
+  {
+    slug: "british-airways-tableau",
+    title: "British Airways Customer Review Dashboard",
+    description:
+      "Created an interactive Tableau dashboard analyzing British Airways customer reviews across aircraft type, cabin class, country, and service categories to surface satisfaction drivers and pain points.",
+    tech: "Tableau · Data Cleaning · Customer Analytics",
+  },
 ];

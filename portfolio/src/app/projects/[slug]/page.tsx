@@ -48,6 +48,17 @@ export default async function ProjectPage({ params }: Props) {
           </a>
         </div>
       )}
+      {project.slug === "british-airways-tableau" && (
+        <div className="mt-4">
+          <a
+            href="https://public.tableau.com/views/AirlineReviewDashboard_17630720914910/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+            target="_blank"
+            className="text-sm font-medium text-blue-600 hover:underline"
+          >
+            View Tableau Dashboard →
+          </a>
+        </div>
+      )}
 
       {project.slug === "smartrefi" && (
         <div className="mt-4">
@@ -119,6 +130,60 @@ export default async function ProjectPage({ params }: Props) {
               />
               <p className="mt-2 text-xs text-gray-500">
                 Aggregated sentiment trends over time by ticker.
+              </p>
+            </a>
+          </div>
+        </section>
+      )}
+
+      {/* british-airways-tableau */}
+      {project.slug === "british-airways-tableau" && (
+        <div className="mt-8 max-w-2xl">
+          <h2 className="text-lg font-semibold text-black">Approach</h2>
+          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-gray-700">
+            <li>Cleaned and structured airline customer review data for analysis.</li>
+            <li>Built interactive Tableau dashboards with filters for aircraft type, cabin class, country, and service category.</li>
+            <li>Designed views to highlight satisfaction drivers and recurring customer pain points.</li>
+          </ul>
+        </div>
+      )}
+      {project.slug === "british-airways-tableau" && (
+        <section className="mt-10">
+          <h2 className="mb-4 text-lg font-semibold text-black">
+            Results
+          </h2>
+
+          <div className="grid gap-8 lg:grid-cols-2">
+            <a href="/images/airline-1.png" target="_blank">
+              <img
+                src="/images/airline-1.png"
+                alt="British Airways overall customer review dashboard"
+                className="w-full rounded-lg border"
+              />
+              <p className="mt-2 text-xs text-gray-500">
+                Overview dashboard summarizing customer ratings, trends over time, and geographic distribution.
+              </p>
+            </a>
+
+            <a href="/images/airline-2.png" target="_blank">
+              <img
+                src="/images/airline-2.png"
+                alt="Business and economy class ratings by aircraft"
+                className="w-full rounded-lg border"
+              />
+              <p className="mt-2 text-xs text-gray-500">
+                Aircraft-level ratings segmented by traveler type and seat class to highlight service differences.
+              </p>
+            </a>
+
+            <a href="/images/airline-3.png" target="_blank">
+              <img
+                src="/images/airline-3.png"
+                alt="Entertainment ratings by aircraft and country"
+                className="w-full rounded-lg border"
+              />
+              <p className="mt-2 text-xs text-gray-500">
+                Entertainment satisfaction analysis across aircraft models and regions.
               </p>
             </a>
           </div>
