@@ -22,31 +22,31 @@ export default function Home() {
         Graduate student in data analytics engineering focused on applied finance and machine learning.
       </p>
 
-      <div className="mt-6 flex items-center gap-6">
+      <div className="mt-6 flex items-center gap-8">
         <a
           href="/resume.pdf"
           target="_blank"
           aria-label="Resume"
-          className="text-gray-700 transition-colors duration-150 hover:text-gray-900"
+          className="text-gray-600 transition-colors duration-150 hover:text-gray-900"
         >
-          <FileText className="h-6 w-6" />
+          <FileText className="h-7 w-7" />
         </a>
         <a
           href="https://www.linkedin.com/in/jkim555"
           target="_blank"
           aria-label="LinkedIn"
-          className="text-gray-700 transition-colors duration-150 hover:text-gray-900"
+          className="text-gray-600 transition-colors duration-150 hover:text-gray-900"
         >
-          <Linkedin className="h-6 w-6" />
+          <Linkedin className="h-7 w-7" />
         </a>
 
         <a
           href="https://github.com/iluvcoding123"
           target="_blank"
           aria-label="GitHub"
-          className="text-gray-700 transition-colors duration-150 hover:text-gray-900"
+          className="text-gray-600 transition-colors duration-150 hover:text-gray-900"
         >
-          <Github className="h-6 w-6" />
+          <Github className="h-7 w-7" />
         </a>
         
       </div>
