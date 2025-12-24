@@ -21,12 +21,12 @@ export default function Home() {
         across finance, analytics, and machine learning.
       </p>
 
-      <div className="mt-6 flex items-center gap-5">
+      <div className="mt-6 flex items-center gap-6">
         <a
           href="https://www.linkedin.com/in/jkim555"
           target="_blank"
           aria-label="LinkedIn"
-          className="text-gray-700 hover:text-gray-900"
+          className="text-gray-700 transition-colors duration-150 hover:text-gray-900"
         >
           <Linkedin className="h-6 w-6" />
         </a>
@@ -35,7 +35,7 @@ export default function Home() {
           href="https://github.com/iluvcoding123"
           target="_blank"
           aria-label="GitHub"
-          className="text-gray-700 hover:text-gray-900"
+          className="text-gray-700 transition-colors duration-150 hover:text-gray-900"
         >
           <Github className="h-6 w-6" />
         </a>
@@ -44,7 +44,7 @@ export default function Home() {
           href="/resume.pdf"
           target="_blank"
           aria-label="Resume"
-          className="text-gray-700 hover:text-gray-900"
+          className="text-gray-700 transition-colors duration-150 hover:text-gray-900"
         >
           <FileText className="h-6 w-6" />
         </a>

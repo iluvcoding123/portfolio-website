@@ -16,7 +16,7 @@ export default function ProjectCard({
   return (
     <Link
       href={`/projects/${slug}`}
-      className="block rounded-lg border border-gray-200 p-6 transition hover:border-gray-400 hover:shadow-sm"
+      className="block rounded-lg border border-gray-200 p-6 transition-shadow duration-200 hover:shadow-md hover:border-gray-300"
     >
       <h3 className="text-lg font-semibold text-black">{title}</h3>
       <p className="mt-2 text-sm text-gray-700">{description}</p>
