@@ -61,13 +61,20 @@ export default async function ProjectPage({ params }: Props) {
       )}
 
       {project.slug === "smartrefi" && (
-        <div className="mt-4">
+        <div className="mt-4 space-y-2">
           <a
             href="https://github.com/iluvcoding123/smartrefi-data-management-system.git"
             target="_blank"
-            className="text-sm font-medium text-blue-600 hover:underline"
+            className="block text-sm font-medium text-blue-600 hover:underline"
           >
             View GitHub Repository →
+          </a>
+          <a
+            href="/SmartRefi-Report.pdf"
+            target="_blank"
+            className="block text-sm font-medium text-blue-600 hover:underline"
+          >
+            View Project Report (PDF) →
           </a>
         </div>
       )}
