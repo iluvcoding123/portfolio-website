@@ -7,6 +7,13 @@ export const projects = [
     tech: "Python · Pandas · scikit-learn · XGBoost · FastAPI · Docker",
   },
   {
+    slug: "british-airways-tableau",
+    title: "British Airways Customer Review Dashboard",
+    description:
+      "Created an interactive Tableau dashboard analyzing British Airways customer reviews across aircraft type, cabin class, country, and service categories to surface satisfaction drivers and pain points.",
+    tech: "Tableau · Data Cleaning · Customer Analytics · Visualization · Interactivity",
+  },
+  {
     slug: "stock-sentiment-analyzer",
     title: "Real-Time ML System: Stock Sentiment Analyzer",
     description:
@@ -19,12 +26,5 @@ export const projects = [
     description:
       "Designed a normalized MySQL database to model a GPA-based student loan refinancing system and built analytical queries to evaluate lender pricing and refinance behavior.",
     tech: "MySQL · SQL · Python · MongoDB · Data Modeling",
-  },
-  {
-    slug: "british-airways-tableau",
-    title: "British Airways Customer Review Dashboard",
-    description:
-      "Created an interactive Tableau dashboard analyzing British Airways customer reviews across aircraft type, cabin class, country, and service categories to surface satisfaction drivers and pain points.",
-    tech: "Tableau · Data Cleaning · Customer Analytics · Visualization · Interactivity",
   },
 ];

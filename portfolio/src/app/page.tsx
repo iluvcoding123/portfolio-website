@@ -13,15 +13,22 @@ export default function Home() {
       <h1 className="text-4xl font-bold text-black">Justin Kim</h1>
 
       <p className="mt-2 text-lg font-medium text-gray-800">
-        Data Analytics & Finance Projects
+        Applied Data Analytics & Finance
       </p>
 
       <p className="mt-6 max-w-xl text-gray-700">
-        Graduate student in data analytics engineering building practical projects
-        across finance, analytics, and machine learning.
+        Graduate student in data analytics engineering focused on applied finance and machine learning.
       </p>
 
       <div className="mt-6 flex items-center gap-6">
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          aria-label="Resume"
+          className="text-gray-700 transition-colors duration-150 hover:text-gray-900"
+        >
+          <FileText className="h-6 w-6" />
+        </a>
         <a
           href="https://www.linkedin.com/in/jkim555"
           target="_blank"
@@ -39,15 +46,7 @@ export default function Home() {
         >
           <Github className="h-6 w-6" />
         </a>
-
-        <a
-          href="/resume.pdf"
-          target="_blank"
-          aria-label="Resume"
-          className="text-gray-700 transition-colors duration-150 hover:text-gray-900"
-        >
-          <FileText className="h-6 w-6" />
-        </a>
+        
       </div>
 
       {/* Projects */}
