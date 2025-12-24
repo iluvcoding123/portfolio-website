@@ -7,18 +7,23 @@ export default function Home() {
     <main className="min-h-screen bg-white py-16">
       <div className="mx-auto max-w-5xl px-6">
       <div className="pl-2 sm:pl-4">
-      <img
-        src="/images/headshot.jpg"
-        alt="Justin Kim headshot"
-        className="mb-6 h-28 w-28 rounded-full object-cover"
-      />
-      <h1 className="text-4xl font-bold text-black">Justin Kim</h1>
+      <div className="flex items-center gap-6">
+        <img
+          src="/images/headshot.jpg"
+          alt="Justin Kim headshot"
+          className="h-28 w-28 rounded-full object-cover"
+        />
 
-      <p className="mt-2 text-lg font-medium text-gray-800">
-        Applied Data Analytics & Finance
-      </p>
+        <div>
+          <h1 className="text-4xl font-bold text-black">Justin Kim</h1>
 
-      <p className="mt-6 max-w-xl text-gray-700">
+          <p className="mt-2 text-lg font-medium text-gray-800">
+            Applied Data Analytics & Finance
+          </p>
+        </div>
+      </div>
+
+      <p className="mt-6 max-w-xl text-gray-700 sm:max-w-none sm:whitespace-nowrap">
         Graduate student in data analytics engineering focused on applied finance and machine learning.
       </p>
 
