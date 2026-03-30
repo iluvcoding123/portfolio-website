@@ -24,7 +24,7 @@ export default function Home() {
       </div>
 
       <p className="mt-6 max-w-xl text-gray-700 sm:max-w-none sm:whitespace-nowrap">
-        Graduate student in data analytics engineering focused on applied finance and machine learning.
+        Graduate student in data analytics engineering with experience in Python, SQL, and building end-to-end data projects.
       </p>
 
       <div className="mt-6 flex items-center gap-8">
