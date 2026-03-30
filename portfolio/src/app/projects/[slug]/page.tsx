@@ -90,6 +90,17 @@ export default async function ProjectPage({ params }: Props) {
           </a>
         </div>
       )}
+      {project.slug === "seattle-crime-analysis" && (
+        <div className="mt-4">
+          <a
+            href="https://github.com/iluvcoding123/seattle-crime-analysis"
+            target="_blank"
+            className="text-sm font-medium text-blue-600 hover:underline"
+          >
+            View GitHub Repository →
+          </a>
+        </div>
+      )}
 
       {/* stock-sentiment-analyzer */}
       {project.slug === "stock-sentiment-analyzer" && (
@@ -328,6 +339,71 @@ export default async function ProjectPage({ params }: Props) {
               />
               <p className="mt-2 text-xs text-gray-500">
                 Feature importance scores from the trained XGBoost model.
+              </p>
+            </a>
+          </div>
+        </section>
+      )}
+
+      {/* seattle-crime-analysis */}
+      {project.slug === "seattle-crime-analysis" && (
+        <div className="mt-8 max-w-2xl">
+          <h2 className="text-lg font-semibold text-black">Approach</h2>
+          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-gray-700">
+            <li>Spatially joined 1.5 million SPD crime records with 3,200+ King County Metro GTFS stops using a 150 meter transit buffer.</li>
+            <li>Built temporal risk profiles to compare transit-adjacent incidents against broader city patterns and isolate commuter risk windows.</li>
+            <li>Created a weighted severity model and priority matrix to rank transit hubs by both incident volume and person-to-person safety impact.</li>
+          </ul>
+        </div>
+      )}
+      {project.slug === "seattle-crime-analysis" && (
+        <section className="mt-10">
+          <h2 className="mb-4 text-lg font-semibold text-black">
+            Results
+          </h2>
+
+          <div className="grid gap-8 lg:grid-cols-2">
+            <a href="/images/seattle-crime-riders-clock.png" target="_blank">
+              <img
+                src="/images/seattle-crime-riders-clock.png"
+                alt="Hourly comparison of transit-adjacent crime risk versus citywide crime"
+                className="w-full rounded-lg border"
+              />
+              <p className="mt-2 text-xs text-gray-500">
+                The rider&apos;s clock shows transit-adjacent risk climbing most sharply in the afternoon, especially from 13:00 to 18:00.
+              </p>
+            </a>
+
+            <a href="/images/seattle-crime-top-hubs.png" target="_blank">
+              <img
+                src="/images/seattle-crime-top-hubs.png"
+                alt="Top 10 transit hubs by nearby incident count"
+                className="w-full rounded-lg border"
+              />
+              <p className="mt-2 text-xs text-gray-500">
+                High-volume transit hubs reveal where a concentrated share of incidents occurs within walking distance of stops.
+              </p>
+            </a>
+
+            <a href="/images/seattle-crime-overindexed-categories.png" target="_blank">
+              <img
+                src="/images/seattle-crime-overindexed-categories.png"
+                alt="Crime categories over-indexed near transit stops"
+                className="w-full rounded-lg border"
+              />
+              <p className="mt-2 text-xs text-gray-500">
+                Violent crime is more concentrated near transit than the citywide average, which elevated priority scores for key downtown nodes.
+              </p>
+            </a>
+
+            <a href="/images/seattle-crime-heatmap.png" target="_blank">
+              <img
+                src="/images/seattle-crime-heatmap.png"
+                alt="Seattle transit safety severity heatmap"
+                className="w-full rounded-lg border"
+              />
+              <p className="mt-2 text-xs text-gray-500">
+                A weighted severity heatmap surfaces the downtown corridor as the dominant risk concentration, with 3rd Ave and Pike St emerging as the highest-severity node.
               </p>
             </a>
           </div>

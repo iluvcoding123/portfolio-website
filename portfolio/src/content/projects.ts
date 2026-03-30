@@ -1,5 +1,12 @@
 export const projects = [
   {
+    slug: "seattle-crime-analysis",
+    title: "Seattle Transit Safety: Spatiotemporal Risk Analysis",
+    description:
+      "Built an operational intelligence analysis over 1.5 million Seattle crime records and GTFS transit stop data to identify high-risk transit nodes, peak exposure windows, and deployment priorities.",
+    tech: "Python · Pandas · NumPy · SciPy KDTree · Geopy · Matplotlib · Seaborn",
+  },
+  {
     slug: "housing-price-prediction",
     title: "End-to-End ML Pipeline: Housing Price Prediction",
     description:
